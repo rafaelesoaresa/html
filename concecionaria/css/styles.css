@@ -1,0 +1,103 @@
+/* styles.css */
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/macos-big-sur-liquid-abstract-55vuiph0ogs68mmw.jpg); 
+  background-size: cover;
+  animation: backgroundAnimation 4s infinite;
+}
+
+@keyframes backgroundAnimation {
+  50% {
+      background-position: 1% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+  10% {
+      background-position: 20% 10%;
+  }
+}
+
+main {
+  background-color: rgba(77, 77, 77, 0.253);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+header {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+ ;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(27, 26, 26, 0.486);
+  border-radius: 60px;
+  box-shadow: 0 0 20px rgba(59, 1, 130, 0.559);
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.car-item {
+  background-color: rgba(53, 53, 72, 0.511);
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.car-item img {
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.car-item:hover img {
+  transform: scale(1.1); /* Efeito de zoom na imagem ao passar o mouse */
+}
+
+.car-details {
+  padding: 20px;
+  background-color: #343256;
+}
+
+.car-details h2 {
+  font-size: 24px;
+}
+
+.car-details p {
+  font-size: 16px;
+}
+
+footer {
+  background-color: rgba(0, 5, 59, 0.781);
+  color: #928f8f;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #34325626;
+}

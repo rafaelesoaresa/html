@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+ background-image: url(../img/gear.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.car-info {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #696969;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+border-radius: 17%;
+
+}
+
+
+h1 {
+    font-size: 24px;
+}
+
+.car-specs {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.photo-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.photo-carousel img {
+    width: 300px;
+    height: 250px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 30%; /* Arredonda a imagem em um círculo */
+}
+
+.photo-carousel img:hover {
+    transform: scale(1.2);
+}
+#play-pause-button {
+    background-color: #ff0000; /* Cor de fundo verde padrão */
+    color: #fff; /* Cor do texto branco */
+    width: 50px; /* Largura do círculo */
+    height: 50px; /* Altura do círculo */
+    border-radius: 50%; /* Transforma o botão em um círculo */
+    font-size: 16px;
+    border: 2px solid #333; /* Adiciona uma borda de 2px sólida preta */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s; /* Adicionamos uma transição para o hover e :active */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play-pause-button:hover {
+    background-color: #ed4949; /* Cor de fundo verde mais escura no hover */
+}
+
+#play-pause-button:active {
+    background-color: #630101; /* Cor de fundo verde ainda mais escura quando pressionado */
+    transform: scale(0.95); /* Diminui ligeiramente o botão quando pressionado */
+}

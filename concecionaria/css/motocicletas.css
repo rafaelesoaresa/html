@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/canion.jpg); 
+  background-size: cover;
+  animation: backgroundAnimation 4s infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 1% 50%;
+    }
+    25% {
+        background-position: 1% 60%;
+    }
+    50% {
+        background-position: 1% 70%;
+    }
+    75% {
+        background-position: 1% 60%;
+    }
+    100% {
+        background-position: 1% 50%;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #a304f330;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+main {
+    padding: 20px;
+}
+
+#motos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.moto {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+.moto:hover {
+    transform: scale(1.05);
+}
+
+.moto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.moto-info {
+    padding: 10px;
+}
+
+.moto h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.moto button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.moto button:hover {
+    background-color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

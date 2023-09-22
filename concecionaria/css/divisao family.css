@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/pexels-zhang-kaiyv-1139556.jpg); 
+    background-size: cover;
+    animation: backgroundAnimation 4s infinite;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+        background-position: 1% 50%;
+    }
+    25% {
+        background-position: 1% 60%;
+    }
+    50% {
+        background-position: 1% 70%;
+    }
+    75% {
+        background-position: 1% 60%;
+    }
+    100% {
+        background-position: 1% 50%;
+    }
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #33333357;
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+#carros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.carro {
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #8b8b8bd0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.carro:hover {
+    transform: scale(1.05);
+}
+
+.carro img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.carro-info {
+    padding: 15px;
+}
+
+.carro h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.carro p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.carro button {
+    display: block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carro button:hover {
+    background-color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
