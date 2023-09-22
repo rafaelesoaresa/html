@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="_css/gamezone.css">
+  <title>Random Art Generator</title>
+</head>
+<body>
+    <div class="primeira linha">
+  <div class="art" id="art"></div>
+  <button id="generateBtn">Generate New Art</button>
+  <div class="clock">
+    <div class="hour-hand" id="hourHand"></div>
+    <div class="minute-hand" id="minuteHand"></div>
+    <div class="second-hand" id="secondHand"></div>
+    <div class="center-circle"></div>
+  </div>
+  
+  <div class="task-app">
+    <h1>Task List</h1>
+    <input type="text" id="taskInput" placeholder="Enter your task...">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+  </div>
+  </div> 
+
+  <div class="converter">
+    <h1>Currency Converter</h1>
+    <div class="input-container">
+      <input type="number" id="amount" placeholder="Amount">
+      <select id="fromCurrency">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+      </select>
+    </div>
+    <div class="input-container">
+      <input type="number" id="convertedAmount" disabled>
+      <select id="toCurrency">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+      </select>
+    </div>
+    <button id="convertBtn">Convert</button>
+  </div>
+  <script src="_js/script.js"></script>
+</body>
+</html>
